@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+  </head>
+  <style type="text/css">
+  	*{
+  		margin: 0;
+  		padding:0;
+  	}
+  	body{
+  		background: #000;
+  	}
+  </style>
+  <body>
+  	<div class="yan1">
+  		<p>留言板</p>
+  	</div>
+  	<div class="box">
+  		<table class="table">
+  			<tr>
+  				<th>标题</th>
+  				<th>内容</th>
+  			</tr>
+  			<% shuju.forEach(function(item,index){ %>
+	  			<tr>
+	  				<td><%- item.biaoti  %></td>
+	  				<td><%- item.con  %></td>
+	  			</tr>
+  			<% }) %>
+  		</table>
+  		
+  		
+  	</div>
+  		
+  </body>
+</html>
